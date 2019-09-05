@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/layoutDados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="25dp"
+        android:background="#000000"
+        android:gravity="top"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/editTextIdAtendimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+        <TextView
+
+            android:layout_width="218dp"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/layoutDados"
+            android:layout_marginLeft="40dp"
+            android:text="Consulte Serviços"
+            android:textColor="#fff"
+            android:textSize="25dp" />
+
+        <TextView
+
+            android:id="@+id/editTextServico"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/textbox_shape"
+            android:gravity="center"
+            android:hint="O.S"
+            android:padding="15dp"
+            android:textColor="#F5F5F5"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/editTextTipo"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/textbox_shape"
+            android:gravity="center"
+            android:hint="Serviço"
+            android:padding="15dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+
+            android:id="@+id/editTextData"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/textbox_shape"
+            android:gravity="center"
+            android:hint="Data da Solicitação"
+            android:padding="15dp"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/editTextStatus"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/textbox_shape"
+            android:gravity="center"
+            android:hint="Status"
+            android:padding="15dp"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/editTextIdCliente"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/textbox_shape"
+            android:gravity="center"
+            android:hint="Id Cliente"
+            android:padding="15dp"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/editTextIdFuncionario"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/textbox_shape"
+            android:gravity="center"
+            android:hint="Id Funcionário"
+            android:padding="15dp"
+            android:textColor="#050505"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBotoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/layoutDados"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="-59dp"
+        android:layout_marginLeft="55dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/buttonExecutado"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/layoutBotoes"
+            android:layout_alignTop="@+id/layoutBotoes"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:background="@drawable/buttonshape"
+            android:text="Em andamento"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <Button
+
+            android:id="@+id/buttonFinalizado"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/layoutBotoes"
+            android:background="@drawable/buttonshape"
+            android:text="Finalizado"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+
+
+
+    <ProgressBar
+        android:id="@+id/barraProgresso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>
